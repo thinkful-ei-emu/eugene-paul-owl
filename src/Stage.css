@@ -21,5 +21,15 @@
 
 hr {
   width: 40%;
-  height: 2px;
+  height: 3px;
+  background-color:#ff7675;
+  border:0;
+}
+
+i {
+  padding-left: 10px;
+}
+
+.red {
+  color: #ff7675;
 }

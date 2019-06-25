@@ -15,7 +15,8 @@ function Stage(props) {
       {part.name}
       <br />
       <hr></hr>
-      
+      <i className="fas fa-volume-up red"></i>
+      <i className="fas fa-search"></i>
       </div>
       <div className="avatar-stage"><img className = "avatar-img" src = {part.avatar} alt = "avatar" /></div>
     </div>
