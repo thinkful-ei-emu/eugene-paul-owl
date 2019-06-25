@@ -1,5 +1,6 @@
 import React from 'react';
 import ChatMessage from './ChatMessage';
+import "./ChatLog.css";
 
 function ChatLog(props){
   let chatList=props.chatEvents.map((event)=>{
@@ -12,14 +13,13 @@ function ChatLog(props){
   console.log(chatList);
 
   return(
-    <div> 
-      <div>
+    <div class="chat-flex-wrapper"> 
+      <div class="chat-log">
         {chatList}
       </div>
       <form className="chat-form">
         <textarea className="chat-form-input" placeholder="Chat" style={{height: '45px'}}>
         </textarea>
-        <input type="submit" className="chat-form-submit"/>
 
       </form>
     </div>

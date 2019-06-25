@@ -11,23 +11,13 @@ function Stage(props) {
   let jsxList=stageParts.map((part)=>(
     <div className='part-on-stage'>
       <div className="name">{part.name}</div>
-<<<<<<< HEAD
       <div className="avatar"><img src = {part.avatar}/></div>
-=======
-      <div className="avatar">picture here</div>
->>>>>>> c30303a2efcd527cd98b7afeaae2ac9ce53c4cb4
     </div>
     )
   );
   if(stageParts.length) {
     return (
-<<<<<<< HEAD
       <div className="grid-2">{jsxList}</div>
-=======
-      <div>
-        {jsxList}
-      </div>
->>>>>>> c30303a2efcd527cd98b7afeaae2ac9ce53c4cb4
     )
   }
   else{

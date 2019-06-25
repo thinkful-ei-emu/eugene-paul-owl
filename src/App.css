@@ -14,7 +14,6 @@
   display:inline-block;
   width:330px;
   height:calc(100% - 75px);
-  overflow:auto;
   vertical-align:top;
 }
 
@@ -23,5 +22,9 @@
   width:calc(100% - 330px);
   height:calc(100% - 75px);
   vertical-align:top;
+}
+
+.chat-results{
+  height:100%;
 }
 

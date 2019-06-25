@@ -1,0 +1,21 @@
+.chat-log{
+  vertical-align:baseline;
+  overflow:scroll;
+}
+
+.chat-form{
+  vertical-align:baseline;
+  padding:10px;
+}
+
+.chat-form-input{
+  width:100%;
+}
+
+.chat-flex-wrapper{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  height:100%;
+  border: 1px solid rgb(223, 218, 218);
+}
