@@ -23,7 +23,7 @@ exports[`renders UI with default props 1`] = `
           className="message-body-time"
         >
            
-          1548852484247
+          07:48:04 GMT-0500 (Eastern Standard Time)
            
         </span>
       </div>
@@ -35,14 +35,62 @@ exports[`renders UI with default props 1`] = `
         </p>
       </div>
     </div>
-    <div />
-    <div />
-    <div />
-    <div />
-    <div />
-    <div />
-    <div />
-    <div />
+    <div
+      classNAme="system-message"
+    >
+      <strong>
+        Caty Flucker
+      </strong>
+    </div>
+    <div
+      classNAme="system-message"
+    >
+      <strong>
+        Frank Runciman
+      </strong>
+    </div>
+    <div
+      classNAme="system-message"
+    >
+      <strong>
+        Koren Templeton
+      </strong>
+    </div>
+    <div
+      classNAme="system-message"
+    >
+      <strong>
+        Koren Templeton
+      </strong>
+    </div>
+    <div
+      classNAme="system-message"
+    >
+      <strong>
+        Koren Templeton
+      </strong>
+    </div>
+    <div
+      classNAme="system-message"
+    >
+      <strong>
+        Ashla Attwool
+      </strong>
+    </div>
+    <div
+      classNAme="system-message"
+    >
+      <strong>
+        Axe Kubicka
+      </strong>
+    </div>
+    <div
+      classNAme="system-message"
+    >
+      <strong>
+        Axe Kubicka
+      </strong>
+    </div>
   </div>
   <form
     className="chat-form"
