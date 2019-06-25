@@ -19,9 +19,9 @@ function App(props) {
       <div className="stage">
         <Stage participants={props.participants}/>
       </div>
-    <div className="control-bar">
+      <div className="control-bar">
 
-    </div>
+      </div>
     
     </div>
     
