@@ -1,20 +1,26 @@
 import React from 'react';
+import "./PartList.css";
 
 function PartList(props){
-  let chatList=props.participants.map((participant)=>
-    (
-    <div className='participant'> 
+  let chatList=props.participants.map((participant)=>{
+    
+
+
+    return <div className='participant'> 
       <img src={participant.avatar} alt='avatar' className='avatar-part'/>
-      <h5> {participant.name}</h5>
-      <p>
-        {participant.onStage?'on stage':'leave stage'}
-      </p>
+      <div className="part-info">
+        <h6 className="part-name"> {participant.name}</h6>
+        <div className="part-status">
+          {participant.onStage?'on stage':'leave stage'}
+        </div>
+      </div>
     </div>
-    )
-  )
+    ;
+  });
+  
 
   return(
-    <div>
+    <div className="part-list">
       {chatList}
     </div>
   );
