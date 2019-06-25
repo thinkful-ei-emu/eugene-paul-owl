@@ -1,15 +1,7 @@
 import React from 'react';
 import './ChatMessage.css'
+import giveTime from "./GiveTime"
 
-function getTime(date){
-  let hours= date.getHours();
-  let AMPM= hours>=12?'PM':'AM';
-  if(hours>12){
-    hours-=12;
-  }
-
-  return `${hours}:${date.getMinutes()} ${AMPM}`;
-}
 
 function ChatMessage(props){
   if(props.message){
@@ -20,7 +12,7 @@ function ChatMessage(props){
           <h6 className="message-body-header">
             {props.name}
           </h6>
-          <span className="message-body-time"> {getTime(new Date(props.time))} </span>
+          <span className="message-body-time"> {giveTime(new Date(props.time))} </span>
           <div className="message-body-content">
             <p>{props.message}</p>
           </div>

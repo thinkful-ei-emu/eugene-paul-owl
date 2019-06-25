@@ -5,9 +5,9 @@ function PartList(props){
     (
     <div className='participant'> 
       <img src={participant.avatar} alt='avatar' className='avatar'/>
-      <h3> {participant.name}</h3>
+      <h5> {participant.name}</h5>
       <p>
-        {participant.true}
+        {participant.onStage?'on stage':'leave stage'}
       </p>
     </div>
     )

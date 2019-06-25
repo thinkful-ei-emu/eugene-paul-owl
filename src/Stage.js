@@ -11,6 +11,7 @@ function Stage(props) {
   console.log(stageParts);
   let jsxList=stageParts.map((part)=>(
     <div className='part-on-stage'>
+<<<<<<< HEAD
       <div className="name">
       {part.name}
       <br />
@@ -18,6 +19,10 @@ function Stage(props) {
       
       </div>
       <div className="avatar-stage"><img className = "avatar-img" src = {part.avatar} alt = "avatar" /></div>
+=======
+      <div className="name">{part.name}</div>
+      <div className="avatar"><img src = {part.avatar}/></div>
+>>>>>>> 7c6f4ae4d7898c67dffea013b298e1a18de898fb
     </div>
     )
   );

@@ -14,7 +14,6 @@
   display:inline-block;
   width:330px;
   height:calc(100% - 75px);
-  overflow:auto;
   vertical-align:top;
 }
 
@@ -24,5 +23,9 @@
   height:calc(100% - 75px);
   vertical-align:top;
   background-color: #404853;
+}
+
+.chat-results{
+  height:100%;
 }
 
