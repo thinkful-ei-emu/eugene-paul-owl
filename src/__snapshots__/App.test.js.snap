@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders UI with default props 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="chatter-box"
+  >
+    <div
+      className="chat-head"
+    />
+    <div
+      className="chat-results"
+    >
+      <div>
+        <div>
+          <div
+            className="message"
+          >
+            <img
+              alt="avatar"
+              className="user-avatar message-avatar"
+              src="https://robohash.org/utlaborumfugit.jpg?size=200x200&set=set1"
+            />
+            <div
+              className="message-body"
+            >
+              <h6
+                className="message-body-header"
+              >
+                Axe Kubicka
+              </h6>
+              <span
+                className="message-body-time"
+              >
+                 
+                1548852484247
+                 
+              </span>
+            </div>
+            <div
+              className="message-body-content"
+            >
+              <p>
+                Hello world
+              </p>
+            </div>
+          </div>
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+        </div>
+        <form
+          className="chat-form"
+        >
+          <textarea
+            className="chat-form-input"
+            placeholder="Chat"
+            style={
+              Object {
+                "height": "45px",
+              }
+            }
+          />
+          <input
+            className="chat-form-submit"
+            type="submit"
+          />
+        </form>
+      </div>
+      <div>
+        <div
+          className="participant"
+        >
+          <img
+            alt="avatar"
+            className="avatar"
+            src="https://robohash.org/itaquevoluptatumrerum.jpg?size=200x200&set=set1"
+          />
+          <h3>
+             
+            Koren Templeton
+          </h3>
+          <p />
+        </div>
+        <div
+          className="participant"
+        >
+          <img
+            alt="avatar"
+            className="avatar"
+            src="https://robohash.org/doloredolorescupiditate.jpg?size=200x200&set=set1"
+          />
+          <h3>
+             
+            Caty Flucker
+          </h3>
+          <p />
+        </div>
+        <div
+          className="participant"
+        >
+          <img
+            alt="avatar"
+            className="avatar"
+            src="https://robohash.org/utlaborumfugit.jpg?size=200x200&set=set1"
+          />
+          <h3>
+             
+            Axe Kubicka
+          </h3>
+          <p />
+        </div>
+        <div
+          className="participant"
+        >
+          <img
+            alt="avatar"
+            className="avatar"
+            src="https://robohash.org/etexercitationemassumenda.jpg?size=200x200&set=set1"
+          />
+          <h3>
+             
+            Frank Runciman
+          </h3>
+          <p />
+        </div>
+        <div
+          className="participant"
+        >
+          <img
+            alt="avatar"
+            className="avatar"
+            src="https://robohash.org/iustodoloremqueinventore.jpg?size=200x200&set=set1"
+          />
+          <h3>
+             
+            Ashla Attwool
+          </h3>
+          <p />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="stage"
+  />
+</div>
+`;

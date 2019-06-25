@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ChatLog from './ChatLog';
+import PartList from './PartList';/* 
+import Stage from './Stage'; */
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="chatter-box">
+        <div className='chat-head'>
+
+        </div>
+        <div className='chat-results'>
+          <ChatLog chatEvents={props.chatEvents} participants={props.participants}/>
+          {<PartList participants={props.participants}/>}
+        </div>
+      </div>
+      <div className="stage">
+        {/* <Stage/> */}
+      </div>
+    <div className="control-bar">
+      
     </div>
+    
+    </div>
+    
   );
 }
 

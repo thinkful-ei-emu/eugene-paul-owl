@@ -1,57 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-const chatEvents = [
-  {
-      participantId: 3,
-      type: 'message',
-      message: 'Hello world',
-      time: 1548852646559,
-      timestamp: 1548852484247
-  },
-  {
-      participantId: 2,
-      type: 'thumbs-up',
-      timestamp: 1548852484247
-  },
-  {
-      participantId: 4,
-      type: 'thumbs-down',
-      timestamp: 1548852484247
-  },
-  {
-      participantId: 1,
-      type: 'raise-hand',
-      timestamp: 1548852544247
-  },
-  {
-      participantId: 1,
-      type: 'clap',
-      timestamp: 1548852544247
-  },
-  {
-      participantId: 1,
-      type: 'join',
-      timestamp: 1548852544247
-  },
-  {
-      participantId: 5,
-      type: 'leave',
-      timestamp: 1548852604247
-  },
-  {
-      participantId: 3,
-      type: 'join-stage',
-      timestamp: 1548852664247
-  },
-  {
-      participantId: 3,
-      type: 'leave-stage',
-      timestamp: 1548852724247
-  }
-];
-
+import PartList from './PartList';
+import renderer from 'react-test-renderer';
 const participants = [
   {
       id: 1,
@@ -94,5 +44,15 @@ const participants = [
   }
 ];
 
-ReactDOM.render(<App chatEvents={chatEvents} participants={participants} />, document.getElementById('root'));
 
+it('renders without crashing', () => {
+  const div = document.createElement('div');
+  ReactDOM.render(<PartList participants={participants} />, div);
+  ReactDOM.unmountComponentAtNode(div);
+});
+
+
+it('renders UI with default props', () => {
+  const tree = renderer.create(<PartList participants={participants} />);
+  expect(tree).toMatchSnapshot();
+});

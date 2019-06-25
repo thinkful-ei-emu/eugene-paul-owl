@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import ChatLog from './ChatLog';
+import renderer from 'react-test-renderer';
 const chatEvents = [
   {
       participantId: 3,
@@ -94,5 +94,15 @@ const participants = [
   }
 ];
 
-ReactDOM.render(<App chatEvents={chatEvents} participants={participants} />, document.getElementById('root'));
 
+it('renders without crashing', () => {
+  const div = document.createElement('div');
+  ReactDOM.render(<ChatLog chatEvents={chatEvents} participants={participants}/>, div);
+  ReactDOM.unmountComponentAtNode(div);
+});
+
+
+it('renders UI with default props', () => {
+  const tree = renderer.create(<ChatLog chatEvents={chatEvents} participants={participants}/>);
+  expect(tree).toMatchSnapshot();
+});

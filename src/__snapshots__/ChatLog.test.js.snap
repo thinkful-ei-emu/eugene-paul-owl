@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders UI with default props 1`] = `
+<div>
+  <div>
+    <div
+      className="message"
+    >
+      <img
+        alt="avatar"
+        className="user-avatar message-avatar"
+        src="https://robohash.org/utlaborumfugit.jpg?size=200x200&set=set1"
+      />
+      <div
+        className="message-body"
+      >
+        <h6
+          className="message-body-header"
+        >
+          Axe Kubicka
+        </h6>
+        <span
+          className="message-body-time"
+        >
+           
+          1548852484247
+           
+        </span>
+      </div>
+      <div
+        className="message-body-content"
+      >
+        <p>
+          Hello world
+        </p>
+      </div>
+    </div>
+    <div />
+    <div />
+    <div />
+    <div />
+    <div />
+    <div />
+    <div />
+    <div />
+  </div>
+  <form
+    className="chat-form"
+  >
+    <textarea
+      className="chat-form-input"
+      placeholder="Chat"
+      style={
+        Object {
+          "height": "45px",
+        }
+      }
+    />
+    <input
+      className="chat-form-submit"
+      type="submit"
+    />
+  </form>
+</div>
+`;
