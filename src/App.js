@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import ChatLog from './ChatLog';
-import PartList from './PartList';/* 
-import Stage from './Stage'; */
+import PartList from './PartList';
+import Stage from './Stage';
 
 function App(props) {
   return (
@@ -17,7 +17,7 @@ function App(props) {
         </div>
       </div>
       <div className="stage">
-        {/* <Stage/> */}
+        {<Stage/>}
       </div>
     <div className="control-bar">
       
