@@ -17,10 +17,10 @@ function App(props) {
         </div>
       </div>
       <div className="stage">
-        {<Stage/>}
+        <Stage participants={props.participants}/>
       </div>
     <div className="control-bar">
-      
+
     </div>
     
     </div>
