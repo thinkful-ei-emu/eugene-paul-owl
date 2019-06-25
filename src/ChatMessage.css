@@ -1,0 +1,34 @@
+.system-message{
+  text-align:center;
+}
+
+.message-avatar{
+  width: 30px;
+  height:30px;
+  margin-top:5px;
+  display:inline-block;
+  vertical-align: top;
+}
+
+h6{
+  margin:0;
+  display:inline-block;
+  font-size:15px;
+  line-height:30px;
+}
+
+.system-message{
+  line-height:30px;
+}
+
+p{
+  margin:0;
+  line-height:30px;
+  
+}
+
+.message-body{
+  margin-left:10px;
+  display:inline-block;
+  vertical-align: top;
+}
